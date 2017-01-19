@@ -1,0 +1,219 @@
+
+/* CSS - build a working form from scratch*/
+
+
+
+/*************************************************************************************************************
+ * Form Validation
+ ***************************************/
+
+.no-formvalidation .box { color: red; }
+.formvalidation .box { color: green; }
+
+/*************************************************************************************************************
+ * GENERAL
+ ***************************************/
+
+.container {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0 0 10px;
+    font-weight: 700;
+}
+/*************************************************************************************************************
+ * HEADER SECTION
+ ***************************************/
+
+#form-title h1 {
+    text-align: center;
+    font-family: Fjalla One;
+    background-color: #c00;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px;
+}
+
+
+
+/*************************************************************************************************************
+ * SHIPPING DETAILS SECTION
+ ***************************************/
+ul#shipping-address {
+    padding-left: 0px;
+}
+
+.section-header h2 {
+	font-family: sans-serif;
+	letter-spacing: 2px;
+}
+
+ body {
+
+ }
+
+input#email {
+    margin-left: 10px;
+}
+
+input#confemail {
+    margin-left: 10px;
+}
+
+input#first-name {
+    margin-left: 33px;
+}
+
+input#last-name {
+	margin-left: 92px;
+}
+
+input#address-1 {
+    margin-left: 39px;
+}
+
+input#address-2 {
+    margin-left: 106px;
+}
+
+select#choosestate {
+    margin-left: 128px;
+}
+
+input#city {
+    margin-left: 80px;
+}
+input#zip {
+    margin-left: 85px;
+}
+
+input#phone {
+    margin-left: 120px;
+}
+
+.submitform.row {
+    padding-left: 15px;
+}
+
+
+
+ .clearFix:after
+{
+	display: block;
+	clear: both;
+	content: ".";
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+
+
+
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+
+input#submitButton {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #fff, #e6e6e6);
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    border: 1px solid #cccccc;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+/*************************************************************************************************************
+ * CSS CONVERT
+***************************************/
+
+
+
+/* IF BIGGER THAN 1024px */
+@media (min-width: 1280px) {
+	#header-wrapper {
+	    width: 900px;
+	}
+}
+/* IF SMALLER THAN 1024px */
+@media (max-width: 1280px) {
+
+}
+
+@media (max-width: 979px) {
+}
+@media (max-width: 940px) {
+}
+
+@media (max-width: 768px) {
+	div#header-wrapper {
+	    overflow-x: hidden;
+	}
+
+	div#form-title h1 {
+	    font-size: 25px;
+	    line-height: 40px;
+	}
+
+	input#email {
+	    margin-left: 68px;
+	}
+	input#first-name {
+	    margin-left: 91px;
+	}
+	input#address-1 {
+	    margin-left: 97px;
+	}
+	input#city {
+	    margin-left: 138px;
+	}
+	select#choosestate {
+	    margin-left: 129px;
+	}
+	input#zip {
+	    margin-left: 142px;
+	}
+	input#company {
+	    margin-left: 55px;
+	}
+	
+}
+
+@media (max-width: 640px) {
+	
+}
+
